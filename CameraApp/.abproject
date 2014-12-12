@@ -5,12 +5,12 @@
   "AppIdentifier": "com.telerik.CameraApp",
   "DisplayName": "CameraApp",
   "Author": "",
-  "Description": "",
+  "Description": "CameraApp",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
-	"2"
+    "2"
   ],
   "iOSBackgroundMode": [],
   "WP8TileTitle": "",
