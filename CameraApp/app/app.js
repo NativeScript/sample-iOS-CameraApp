@@ -399,10 +399,10 @@ var CameraViewController = UIViewController.extend({
     }
 }, {
     exposedMethods: {
-        'dialBeginEdit': 'v@',
-        'dialEndEdit': 'v@',
-        'updateCamera': 'v',
-        'takePhoto': 'v'
+        'dialBeginEdit': { returns: interop.types.void, params: [interop.types.id] },
+        'dialEndEdit': { returns: interop.types.void, params: [interop.types.id] },
+        'updateCamera': { returns: interop.types.void },
+        'takePhoto': { returns: interop.types.void }
     }
 });
 
