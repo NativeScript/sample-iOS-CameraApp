@@ -1,11 +1,11 @@
 {
-  "ProjectName": "CameraApp",
-  "ProjectGuid": "57651b73-80e8-4c02-afcd-6043e70e814f",
+  "ProjectName": "camera-app",
+  "ProjectGuid": "51c86e5e-dd1f-461f-8bef-380f915c23ee",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.CameraApp",
-  "DisplayName": "CameraApp",
+  "AppIdentifier": "com.telerik.cameraapp",
+  "DisplayName": "camera-app",
   "Author": "",
-  "Description": "CameraApp",
+  "Description": "camera-app",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -13,33 +13,9 @@
     "2"
   ],
   "iOSBackgroundMode": [],
-  "WP8TileTitle": "",
-  "WP8Publisher": "",
-  "WP8Capabilities": [],
-  "WP8Requirements": [],
-  "WP8PublisherID": "",
-  "WP8ProductID": "",
   "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
-  "FrameworkVersion": "0.4.0",
   "AndroidPermissions": [
-    "android.permission.ACCESS_COARSE_LOCATION",
-    "android.permission.ACCESS_FINE_LOCATION",
-    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
-    "android.permission.ACCESS_NETWORK_STATE",
-    "android.permission.ACCOUNT_MANAGER",
-    "android.permission.BROADCAST_STICKY",
-    "android.permission.CAMERA",
-    "android.permission.GET_ACCOUNTS",
-    "android.permission.INTERNET",
-    "android.permission.MANAGE_ACCOUNTS",
-    "android.permission.MODIFY_AUDIO_SETTINGS",
-    "android.permission.READ_CONTACTS",
-    "android.permission.READ_PHONE_STATE",
-    "android.permission.RECEIVE_SMS",
-    "android.permission.RECORD_AUDIO",
-    "android.permission.VIBRATE",
-    "android.permission.WRITE_CONTACTS",
-    "android.permission.WRITE_EXTERNAL_STORAGE"
+    "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
     "Portrait",
@@ -47,5 +23,6 @@
   ],
   "AndroidHardwareAcceleration": "false",
   "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "0.10.0",
   "Framework": "NativeScript"
 }
