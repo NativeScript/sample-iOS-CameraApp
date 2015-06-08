@@ -1,2 +1,2 @@
-{ "name" : "http",
+﻿{ "name" : "http",
   "main" : "http.js" }
