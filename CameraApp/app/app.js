@@ -394,6 +394,10 @@ var CameraViewController = UIViewController.extend({
             }
             this.device.setExposureModeCustomWithDurationISOCompletionHandler({ value: this.exposure.value, timescale: 1000, epoch: 0, flags: 1 }, this.iso.value, null);
             this.device.unlockForConfiguration();
+        } else {
+            var alert = new UIAlertView();
+            alert.title = 'iOS 8.X required';
+            alert.show();
         }
     },
     shouldAutorotate: function () {
