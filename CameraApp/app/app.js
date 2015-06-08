@@ -386,13 +386,19 @@ var CameraViewController = UIViewController.extend({
         UIView.commitAnimations();
     },
     updateCamera: function () {
-        this.device.lockForConfiguration(null);
-        this.device.whiteBalanceMode = this.whiteBalance.value.auto ? AVCaptureWhiteBalanceMode.ContinuousAutoWhiteBalance : AVCaptureWhiteBalanceMode.Locked;
-        if (!this.whiteBalance.value.auto) {
-            this.device.setWhiteBalanceModeLockedWithDeviceWhiteBalanceGainsCompletionHandler(this.whiteBalance.value, null);
+        if (UIDevice.currentDevice().systemVersion[0] >= 8) {
+            this.device.lockForConfiguration(null);
+            this.device.whiteBalanceMode = this.whiteBalance.value.auto ? AVCaptureWhiteBalanceMode.ContinuousAutoWhiteBalance : AVCaptureWhiteBalanceMode.Locked;
+            if (!this.whiteBalance.value.auto) {
+                this.device.setWhiteBalanceModeLockedWithDeviceWhiteBalanceGainsCompletionHandler(this.whiteBalance.value, null);
+            }
+            this.device.setExposureModeCustomWithDurationISOCompletionHandler({ value: this.exposure.value, timescale: 1000, epoch: 0, flags: 1 }, this.iso.value, null);
+            this.device.unlockForConfiguration();
+        } else {
+            var alert = new UIAlertView();
+            alert.title = 'iOS 8.X required';
+            alert.show();
         }
-        this.device.setExposureModeCustomWithDurationISOCompletionHandler({ value: this.exposure.value, timescale: 1000, epoch: 0, flags: 1 }, this.iso.value, null);
-        this.device.unlockForConfiguration();
     },
     shouldAutorotate: function () {
         return false;
