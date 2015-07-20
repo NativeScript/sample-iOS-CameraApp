@@ -1,28 +1,28 @@
 {
-  "ProjectName": "camera-app",
-  "ProjectGuid": "51c86e5e-dd1f-461f-8bef-380f915c23ee",
-  "projectVersion": 1,
-  "AppIdentifier": "com.telerik.cameraapp",
-  "DisplayName": "camera-app",
-  "Author": "",
-  "Description": "camera-app",
-  "BundleVersion": "1.0",
-  "AndroidVersionCode": "1",
-  "iOSDeviceFamily": [
-    "1",
-    "2"
-  ],
-  "iOSBackgroundMode": [],
-  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
-  "AndroidPermissions": [
-    "android.permission.INTERNET"
-  ],
-  "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
-  ],
-  "AndroidHardwareAcceleration": "false",
-  "iOSStatusBarStyle": "Default",
-  "FrameworkVersion": "1.0.1",
-  "Framework": "NativeScript"
+	"ProjectName": "camera-app",
+	"ProjectGuid": "51c86e5e-dd1f-461f-8bef-380f915c23ee",
+	"projectVersion": 1,
+	"AppIdentifier": "com.telerik.cameraapp",
+	"DisplayName": "camera-app",
+	"Author": "",
+	"Description": "camera-app",
+	"BundleVersion": "1.0",
+	"AndroidVersionCode": "1",
+	"iOSDeviceFamily": [
+		"1",
+		"2"
+	],
+	"iOSBackgroundMode": [],
+	"ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+	"AndroidPermissions": [
+		"android.permission.INTERNET"
+	],
+	"DeviceOrientations": [
+		"Portrait",
+		"Landscape"
+	],
+	"AndroidHardwareAcceleration": "false",
+	"iOSStatusBarStyle": "Default",
+	"FrameworkVersion": "1.1.2",
+	"Framework": "NativeScript"
 }
