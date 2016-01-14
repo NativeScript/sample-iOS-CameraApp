@@ -2,13 +2,13 @@
 	"nativescript": {
 		"id": "org.nativescript.CameraApp",
 		"tns-android": {
-			"version": "1.2.1"
+			"version": "1.5.1"
 		},
 		"tns-ios": {
-			"version": "1.2.2"
+			"version": "1.5.2"
 		}
 	},
 	"dependencies": {
-		"tns-core-modules": "1.4.0"
+		"tns-core-modules": "1.5.1"
 	}
 }
