@@ -352,7 +352,7 @@ var CameraViewController = UIViewController.extend({
         var videoConnection = this.output.connections[0];
         this.output.captureStillImageAsynchronouslyFromConnectionCompletionHandler(videoConnection, function (buffer, error) {
             var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer);
-            var image = new UIImage(imageData);
+            var image = UIImage.imageWithData(imageData);
             UIImageWriteToSavedPhotosAlbum(image, null, null, null);
             AudioServicesPlaySystemSound(144);
         });
