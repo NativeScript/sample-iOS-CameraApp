@@ -414,8 +414,8 @@ var CameraViewController = UIViewController.extend({
 
 var AppDelegate = UIResponder.extend({
     applicationDidFinishLaunchingWithOptions: function () {
-        this._window = new UIWindow(UIScreen.mainScreen().bounds);
-        this._window.backgroundColor = UIColor.blackColor();
+        this._window = new UIWindow(UIScreen.mainScreen.bounds);
+        this._window.backgroundColor = UIColor.blackColor;
         this._window.rootViewController = new CameraViewController();
         this._window.makeKeyAndVisible();
         return true;
